@@ -114,6 +114,89 @@
   transform: scale(1.1);
 }
 </style>
+</script>
+</body>
+</html>
+<div class="social-container">
+  <a href="https://www.facebook.com/yousef.problame" target="_blank" class="facebook-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="white">
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12"/>
+    </svg>
+    فيسبوك
+  </a>
+
+  <a href="https://wa.me/213796031961" target="_blank" class="whatsapp-btn">
+    واتساب
+  </a>
+</div>
+
+<style>
+.call-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+  animation: pulse 1.5s infinite;
+  transition: 0.3s;
+}
+
+/* container للأزرار الجانبية */
+.social-container {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+/* فيسبوك */
+.facebook-btn {
+  background: #1877F2;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 0 15px rgba(24,119,242,0.5);
+  animation: pulse 1.8s infinite;
+}
+
+/* واتساب */
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(37,211,102,0.5);
+  animation: pulse 1.8s infinite;
+}
+
+/* نبض موحّد */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* hover */
+.call-btn:hover,
+.facebook-btn:hover,
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+</style>
   <script id="fig-badge-loader">
 (() => {
   if (window.__FIG_BADGE_LOADER_V1__) return;
